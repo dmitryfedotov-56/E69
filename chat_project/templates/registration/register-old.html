@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>User:</td>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+               <td>Password:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+			    <td>Repeat password:</td>
+                <td><input type="password" name="password2"></td>
+            </tr>
+            </tr>
+        </table>
+        <!---
+        User: <input type="text" name="username"><br>
+        Email: <input type="email" name="email"><br>
+        Password: <input type="password" name="password"><br>
+        Repeat password: <input type="password" name="password2"><br>
+        --->
+
+        <input type="submit" value="Регистрация">
+    </form>
+</body>
+</html>

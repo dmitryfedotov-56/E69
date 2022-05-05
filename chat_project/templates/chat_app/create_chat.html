@@ -1,0 +1,6 @@
+<h3>New chat</h3>
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Create">
+</form>
